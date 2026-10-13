@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Tamaños Altura y Anchura";
+}
+
+<div class="container my-5">
+    <h2 class="fw-bold text-center mb-4 border-bottom pb-2">📐 Ejemplo 1: Anchura (Width)</h2>
+    <p>Bootstrap nos da clases <code>w-25</code>, <code>w-50</code>, <code>w-75</code>, <code>w-100</code> y <code>w-auto</code> para controlar el ancho de un elemento.</p>
+
+    <div class="w-25 p-3 bg-primary text-white mb-2">Width 25%</div>
+    <div class="w-50 p-3 bg-secondary text-white mb-2">Width 50%</div>
+    <div class="w-75 p-3 bg-primary text-white mb-2">Width 75%</div>
+    <div class="w-100 p-3 bg-secondary text-white mb-2">Width 100%</div>
+    <div class="w-auto p-3 bg-primary text-white">Width auto</div>
+
+    <h2 class="fw-bold text-center mt-5 mb-4 border-bottom pb-2">📏 Ejemplo 2: Altura (Height)</h2>
+    <p>Para la altura, Bootstrap ofrece <code>h-25</code>, <code>h-50</code>, <code>h-75</code>, <code>h-100</code> y <code>h-auto</code>. Se aplican dentro de un contenedor con altura definida.</p>
+
+    <div class="bg-info d-flex align-items-start justify-content-around" style="height: 150px;">
+        <div class="h-25 d-inline-block bg-primary text-white w-25 text-center">Height 25%</div>
+        <div class="h-50 d-inline-block bg-secondary text-white w-25 text-center">Height 50%</div>
+        <div class="h-75 d-inline-block bg-primary text-white w-25 text-center">Height 75%</div>
+        <div class="h-100 d-inline-block bg-secondary text-white w-25 text-center">Height 100%</div>
+        <div class="h-auto d-inline-block bg-primary text-white w-25 text-center">Height auto</div>
+    </div>
+
+    <h2 class="fw-bold text-center mt-5 mb-4 border-bottom pb-2">🖥️ Ejemplo 3: Toda la Pantalla</h2>
+    <p>Bootstrap también incluye clases <code>vw-100</code> y <code>vh-100</code> para ocupar todo el ancho o alto de la ventana.</p>
+
+    <div class="vw-100 bg-success text-white p-2 mb-2">Width 100vw (todo el ancho de la ventana)</div>
+    <div class="vh-100 bg-secondary text-white p-2">Height 100vh (todo el alto de la ventana)</div>
+</div>

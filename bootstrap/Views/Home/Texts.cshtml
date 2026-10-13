@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Texto";
+}
+
+<div class="container my-5">
+    <h1 class="fw-bold text-center mb-4 border-bottom pb-2">📖 Guía de Estilos de Texto en Bootstrap</h1>
+    <p class="lead text-center">
+        Bootstrap incluye clases utilitarias para alinear, transformar y dar estilo al texto de manera rápida y elegante.
+        A continuación se muestran ejemplos prácticos con explicaciones.
+    </p>
+
+    <!-- Alineación de texto -->
+    <h2 class="fw-semibold mt-5 mb-3 text-primary">🔹 Alineando Texto</h2>
+    <p>Las clases <code>.text-start</code>, <code>.text-center</code> y <code>.text-end</code> permiten alinear el texto a la izquierda, al centro o a la derecha.</p>
+    <p class="text-start bg-light p-2">Texto alineado a la izquierda</p>
+    <p class="text-center bg-light p-2">Texto alineado al centro</p>
+    <p class="text-end bg-light p-2">Texto alineado a la derecha</p>
+
+    <!-- Alineación responsiva -->
+    <h2 class="fw-semibold mt-5 mb-3 text-success">🔹 Alineación Responsiva</h2>
+    <p>Podemos alinear texto según el tamaño de pantalla usando <code>.text-sm-center</code>, <code>.text-md-center</code>, <code>.text-lg-center</code> y <code>.text-xl-center</code>.</p>
+    <p class="text-sm-center bg-light p-2">Texto centrado en pantallas pequeñas o mayores</p>
+    <p class="text-md-center bg-light p-2">Texto centrado en pantallas medianas o mayores</p>
+    <p class="text-lg-center bg-light p-2">Texto centrado en pantallas grandes o mayores</p>
+    <p class="text-xl-center bg-light p-2">Texto centrado en pantallas extra-grandes o mayores</p>
+
+    <!-- Texto dentro de contenedor -->
+    <h2 class="fw-semibold mt-5 mb-3 text-info">🔹 Texto dentro de su Contenedor</h2>
+    <p>Las clases <code>.text-wrap</code> y <code>.text-break</code> controlan cómo se ajusta el texto dentro de un contenedor.</p>
+    <div class="badge bg-primary text-wrap w-25 mb-2">
+        Este texto se ajusta al ancho del contenedor
+    </div>
+    <div class="badge bg-primary text-wrap text-break w-25">
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+    </div>
+
+    <!-- Transformación de texto -->
+    <h2 class="fw-semibold mt-5 mb-3 text-danger">🔹 Transformando Texto</h2>
+    <p>Podemos transformar el texto con <code>.text-lowercase</code>, <code>.text-uppercase</code> y <code>.text-capitalize</code>.</p>
+    <p class="text-lowercase bg-light p-2">Texto en minúsculas</p>
+    <p class="text-uppercase bg-light p-2">Texto en mayúsculas</p>
+    <p class="text-capitalize bg-light p-2">Cada palabra con mayúscula inicial</p>
+
+    <!-- Tamaños de texto -->
+    <h2 class="fw-semibold mt-5 mb-3 text-warning">🔹 Tamaños del Texto</h2>
+    <p>Las clases <code>.fs-1</code> a <code>.fs-6</code> definen tamaños de fuente, siendo <code>.fs-1</code> el más grande y <code>.fs-6</code> el más pequeño.</p>
+    <p class="fs-1">Texto con .fs-1</p>
+    <p class="fs-2">Texto con .fs-2</p>
+    <p class="fs-3">Texto con .fs-3</p>
+    <p class="fs-4">Texto con .fs-4</p>
+    <p class="fs-5">Texto con .fs-5</p>
+    <p class="fs-6">Texto con .fs-6</p>
+
+    <!-- Estilos de texto -->
+    <h2 class="fw-semibold mt-5 mb-3 text-secondary">🔹 Estilos del Texto</h2>
+    <p>Bootstrap ofrece clases para cambiar el grosor y estilo del texto:</p>
+    <ul>
+        <li><code>.fw-bold</code>, <code>.fw-bolder</code>, <code>.fw-normal</code>, <code>.fw-light</code>, <code>.fw-lighter</code></li>
+        <li><code>.fst-italic</code> para cursiva</li>
+        <li><code>.text-decoration-underline</code> para subrayado</li>
+        <li><code>.text-decoration-line-through</code> para tachado</li>
+        <li><code>.text-decoration-none</code> para quitar decoración en enlaces</li>
+    </ul>
+
+    <p class="fw-bold">Texto en negrita (.fw-bold)</p>
+    <p class="fw-bolder">Texto más negrita (.fw-bolder)</p>
+    <p class="fw-normal">Texto normal (.fw-normal)</p>
+    <p class="fw-light">Texto ligero (.fw-light)</p>
+    <p class="fw-lighter">Texto más ligero (.fw-lighter)</p>
+    <p class="fst-italic">Texto en cursiva (.fst-italic)</p>
+    <p class="text-decoration-underline">Texto subrayado (.text-decoration-underline)</p>
+    <p class="text-decoration-line-through">Texto tachado (.text-decoration-line-through)</p>
+    <a href="#" class="text-decoration-none">Enlace sin decoración (.text-decoration-none)</a>
+</div>

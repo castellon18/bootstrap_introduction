@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Alertas";
+}
+
+<div class="container my-5">
+    <h1 class="fw-bold text-center mb-4 border-bottom pb-2">📖 Guía de Alertas en Bootstrap</h1>
+    <p class="lead text-center">
+        Las <strong>alertas</strong> en Bootstrap permiten mostrar mensajes informativos, de éxito, advertencia o error
+        de manera clara y estilizada. Se pueden usar tanto de forma estática como dinámica.
+    </p>
+
+    <!-- Tipos de alertas -->
+    <h2 class="mb-3 text-primary fs-4 text-decoration-underline">🔹 Tipos de Alertas</h2>
+    <p>Cada alerta se define con la clase <code>.alert</code> y un modificador de color como <code>.alert-primary</code>, <code>.alert-success</code>, etc.</p>
+
+    <div class="alert alert-primary" role="alert">Alerta Primary</div>
+    <div class="alert alert-secondary" role="alert">Alerta Secondary</div>
+    <div class="alert alert-success" role="alert">Alerta Success</div>
+    <div class="alert alert-danger" role="alert">Alerta Danger</div>
+    <div class="alert alert-warning" role="alert">Alerta Warning</div>
+    <div class="alert alert-info" role="alert">Alerta Info</div>
+    <div class="alert alert-light" role="alert">Alerta Light</div>
+    <div class="alert alert-dark" role="alert">Alerta Dark</div>
+
+    <!-- Alertas dinámicas -->
+    <h2 class="mt-5 text-primary fs-4 text-decoration-underline">🔹 Ejemplo Dinámico de Alertas</h2>
+    <p>Podemos generar alertas dinámicamente con JavaScript. Aquí se muestran botones que crean alertas de éxito, error e información.</p>
+
+    <div class="row g-3 mb-3">
+        <div class="col">
+            <button onclick="mostrarAlertaExitoso()" class="btn btn-outline-success w-100">Mensaje de éxito</button>
+        </div>
+        <div class="col">
+            <button onclick="mostrarAlertaError()" class="btn btn-outline-danger w-100">Mensaje de error</button>
+        </div>
+        <div class="col">
+            <button onclick="mostrarAlertaInfo()" class="btn btn-outline-primary w-100">Mensaje de información</button>
+        </div>
+    </div>
+
+    <!-- Contenedor de alertas dinámicas -->
+    <div id="contenedorAlertas"></div>
+</div>
+
+@section Scripts {
+    <script>
+        // Funciones para mostrar alertas dinámicas
+        const mostrarAlertaExitoso = () => {
+          mostrarAlerta('✅ Operación realizada con éxito', 'success');
+        }
+
+        const mostrarAlertaError = () => {
+          mostrarAlerta('❌ Ha ocurrido un error', 'danger');
+        }
+
+        const mostrarAlertaInfo = () => {
+          mostrarAlerta('ℹ️ Información importante', 'primary');
+        }
+
+        const mostrarAlerta = (mensaje = '', tipo = '') => {
+          const alerta = document.createElement('div');
+          alerta.innerHTML = `
+            <div class="alert alert-${tipo} alert-dismissible fade show" role="alert">
+              ${mensaje}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          `;
+          const contenedorAlertas = document.getElementById('contenedorAlertas');
+          contenedorAlertas.append(alerta);
+        }
+    </script>
+}

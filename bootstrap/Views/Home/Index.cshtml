@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Introducción -->
+        <div class="col-lg-8 mx-auto">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h3 class="card-title text-primary mb-3">Aprendiendo Bootstrap 5.3.3</h3>
+                    <p class="card-text">
+                        Bootstrap es un framework frontend que nos brinda componentes y estilos
+                        predefinidos para crear interfaces modernas y responsivas sin necesidad
+                        de empezar desde cero.
+                    </p>
+                    <p class="card-text">
+                        Con sus utilidades y componentes podemos construir rápidamente elementos como:
+                    </p>
+                    
+                    <!-- Lista con íconos -->
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><i class="bi bi-layers"></i> Accordion</li>
+                        <li class="list-group-item"><i class="bi bi-exclamation-triangle"></i> Alert</li>
+                        <li class="list-group-item"><i class="bi bi-images"></i> Carousel</li>
+                        <li class="list-group-item"><i class="bi bi-card-text"></i> Card</li>
+                        <li class="list-group-item"><i class="bi bi-menu-button-wide"></i> Navbar</li>
+                    </ul>
+
+                    <!-- Ejemplo práctico -->
+                    <div class="alert alert-info" role="alert">
+                        <strong>Tip:</strong> Usa la clase <code>.container</code> para centrar tu contenido
+                        y aprovecha los <strong>breakpoints</strong> para que tu diseño se adapte
+                        automáticamente a distintos tamaños de pantalla.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ejemplo visual con Accordion -->
+    <div class="row mt-5">
+        <div class="col-lg-8 mx-auto">
+            <h4 class="mb-3">Ejemplo Interactivo</h4>
+            <div class="accordion" id="demoAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué es un breakpoint?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#demoAccordion">
+                        <div class="accordion-body">
+                            Los breakpoints son puntos de quiebre en el ancho de la pantalla que permiten
+                            aplicar estilos diferentes según el dispositivo (móvil, tablet, escritorio).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Por qué usar Bootstrap?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#demoAccordion">
+                        <div class="accordion-body">
+                            Porque acelera el desarrollo, garantiza consistencia visual y facilita la creación
+                            de interfaces responsivas sin esfuerzo adicional.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

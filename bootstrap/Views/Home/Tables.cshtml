@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Tablas";
+}
+
+<div class="container my-5">
+    <h1 class="fw-bold text-center mb-4 border-bottom pb-2">📊 Tablas Elegantes con Bootstrap</h1>
+    <p class="lead text-center">
+        Bootstrap nos ofrece clases utilitarias para dar estilos modernos y responsivos a las tablas.
+        Aquí veremos tres ejemplos prácticos.
+    </p>
+
+    <!-- Ejemplo 1: Tabla básica estilizada -->
+    <h2 class="fw-semibold mt-5 mb-3 text-primary">🔹 Ejemplo 1: Tabla Básica Estilizada</h2>
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>César</td>
+                <td>cesar@example.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ana</td>
+                <td>ana@example.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Juan</td>
+                <td>juan@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="text-muted">Aquí usamos <code>.table</code>, <code>.table-bordered</code> y <code>.table-striped</code> para un estilo limpio.</p>
+
+    <!-- Ejemplo 2: Tabla con colores contextuales -->
+    <h2 class="fw-semibold mt-5 mb-3 text-success">🔹 Ejemplo 2: Tabla con Colores Contextuales</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-success">
+                <td>Éxito</td>
+                <td>Operación realizada correctamente</td>
+            </tr>
+            <tr class="table-danger">
+                <td>Error</td>
+                <td>Hubo un problema en el sistema</td>
+            </tr>
+            <tr class="table-warning">
+                <td>Advertencia</td>
+                <td>Revisa la configuración</td>
+            </tr>
+            <tr class="table-info">
+                <td>Info</td>
+                <td>Datos actualizados</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="text-muted">Usamos clases como <code>.table-success</code>, <code>.table-danger</code>, <code>.table-warning</code> y <code>.table-info</code> para resaltar filas según su contexto.</p>
+
+    <!-- Ejemplo 3: Tabla avanzada responsiva -->
+    <h2 class="fw-semibold mt-5 mb-3 text-danger">🔹 Ejemplo 3: Tabla Avanzada Responsiva</h2>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-primary">
+                <tr>
+                    <th>#</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Laptop</td>
+                    <td>$1200</td>
+                    <td>Disponible</td>
+                    <td><button class="btn btn-sm btn-outline-primary">Ver</button></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Smartphone</td>
+                    <td>$800</td>
+                    <td>Agotado</td>
+                    <td><button class="btn btn-sm btn-outline-secondary">Ver</button></td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Tablet</td>
+                    <td>$500</td>
+                    <td>Disponible</td>
+                    <td><button class="btn btn-sm btn-outline-success">Ver</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="text-muted">Aquí usamos <code>.table-hover</code>, <code>.align-middle</code> y <code>.table-responsive</code> para una tabla moderna y adaptable.</p>
+</div>

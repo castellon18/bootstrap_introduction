@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Tabs";
+}
+
+<div class="container my-5">
+    <h1 class="fw-bold text-center mb-4 border-bottom pb-2">📖 Guía de Pestañas (Tabs) en Bootstrap</h1>
+    <p class="lead text-center">
+        El componente <strong>Tabs</strong> en Bootstrap permite organizar contenido en secciones que se muestran al hacer clic en cada pestaña.
+        Es ideal para formularios, configuraciones o mostrar diferentes bloques de información en un mismo espacio.
+    </p>
+
+    <!-- Navegación de pestañas -->
+    <h2 class="mb-3 text-primary fs-4 text-decoration-underline">🔹 Navegación de Pestañas</h2>
+    <p>Las pestañas se definen con <code>.nav .nav-tabs</code>. Cada <code>.nav-link</code> está asociado a un contenido mediante <code>data-bs-target</code>.</p>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">Formulario</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">Input Groups</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">Tarjeta</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">Botones</button>
+        </li>
+    </ul>
+
+    <!-- Contenido de pestañas -->
+    <div class="tab-content">
+        <!-- Tab 1 -->
+        <div class="tab-pane fade show active" id="tab1">
+            <h2 class="text-decoration-underline fs-3 text-primary mt-4 mb-4">Primera Pestaña: Formulario</h2>
+            <p>Ejemplo de formulario básico con campos de email y textarea.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Tab 2 -->
+        <div class="tab-pane fade" id="tab2">
+            <h2 class="text-decoration-underline fs-3 text-secondary mt-4 mb-4">Segunda Pestaña: Input Groups</h2>
+            <p>Los <code>.input-group</code> permiten agrupar inputs con etiquetas o botones, y se pueden ajustar en tamaño.</p>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text">Small</span>
+                <input type="text" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Default</span>
+                <input type="text" class="form-control">
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Large</span>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <!-- Tab 3 -->
+        <div class="tab-pane fade" id="tab3">
+            <h2 class="text-decoration-underline fs-3 text-success mt-4 mb-4">Tercera Pestaña: Tarjeta</h2>
+            <p>Ejemplo de <code>.card</code> con imagen, título, texto y botón.</p>
+            <div class="card" style="width: 18rem;">
+                <img src="https://media.gq.com.mx/photos/5f6ce732bc946e88f6c96320/16:9/w_2560%2Cc_limit/goky%2520ultra%2520instinto.jpg" class="card-img-top" alt="Goku">
+                <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <p class="card-text">Ejemplo de texto dentro de una tarjeta para mostrar información.</p>
+                    <a href="#" class="btn btn-primary">Acción</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4 -->
+        <div class="tab-pane fade" id="tab4">
+            <h2 class="text-decoration-underline fs-3 text-info mt-4 mb-4">Cuarta Pestaña: Botones</h2>
+            <p>Ejemplo de botones con diferentes estilos de Bootstrap.</p>
+            <div class="d-flex flex-wrap gap-2">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+        </div>
+    </div>
+</div>

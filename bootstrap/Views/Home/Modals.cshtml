@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Modal";
+}
+
+<div class="container my-5">
+    <h1 class="fw-bold text-center mb-4 border-bottom pb-2">📖 Guía de Modales en Bootstrap</h1>
+    <p class="lead text-center">
+        El componente <strong>Modal</strong> en Bootstrap permite mostrar ventanas emergentes para formularios, mensajes o confirmaciones.
+        Se activan mediante botones y ofrecen encabezado, cuerpo y pie de página personalizables.
+    </p>
+
+    <!-- Botón que abre el modal -->
+    <h2 class="mb-3 text-primary fs-4 text-decoration-underline">🔹 Botón para abrir el Modal</h2>
+    <p>El botón utiliza <code>data-bs-toggle="modal"</code> y <code>data-bs-target="#staticBackdrop"</code> para abrir el modal correspondiente.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Abrir modal
+    </button>
+
+    <!-- Modal -->
+    <h2 class="mt-5 mb-3 text-primary fs-4 text-decoration-underline">🔹 Estructura del Modal</h2>
+    <p>
+        El modal se compone de:
+        <ul>
+            <li><code>.modal-header</code>: título y botón de cierre.</li>
+            <li><code>.modal-body</code>: contenido principal (texto, formularios, etc.).</li>
+            <li><code>.modal-footer</code>: botones de acción como “Cerrar” o “Guardar”.</li>
+        </ul>
+    </p>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Encabezado -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Título del Modal</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <p>Este es un pequeño formulario dentro del modal:</p>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Primer nombre</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su primer nombre" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Primer apellido</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su primer apellido" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Segundo nombre</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su segundo nombre" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Segundo apellido</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su segundo apellido" />
+                        </div>
+                    </form>
+                </div>
+                <!-- Pie de página -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

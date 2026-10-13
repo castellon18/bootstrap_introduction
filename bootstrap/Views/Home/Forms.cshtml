@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Formulario";
+}
+
+<div class="container my-5">
+    <h1 class="fw-bold text-center mb-4 border-bottom pb-2">📖 Guía de Formularios en Bootstrap</h1>
+    <p class="lead text-center">
+        Bootstrap ofrece clases utilitarias para crear formularios modernos, responsivos y elegantes.
+        A continuación se muestran ejemplos prácticos con explicaciones.
+    </p>
+
+    <!-- Formulario normal -->
+    <h2 class="fw-semibold mt-5 mb-3 text-primary">🔹 Formulario Normal</h2>
+    <p>Este formulario utiliza las clases <code>.form-control</code>, <code>.form-label</code> y <code>.form-select</code> para dar estilo a los campos de entrada, etiquetas y listas desplegables.</p>
+
+    <form>
+        <!-- Campo Email -->
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="ejemplo@correo.com" />
+        </div>
+
+        <!-- Campo Descripción -->
+        <div class="mb-3">
+            <label class="form-label">Descripción</label>
+            <textarea class="form-control" rows="3" placeholder="Escriba aquí su descripción"></textarea>
+        </div>
+
+        <!-- Select -->
+        <div class="mb-3">
+            <label class="form-label">Color Favorito</label>
+            <select class="form-select">
+                <option selected>Seleccione un color</option>
+                <option value="1">Azul</option>
+                <option value="2">Rojo</option>
+                <option value="3">Verde</option>
+                <option value="4">Púrpura</option>
+            </select>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="empleadoCheck" />
+            <label class="form-check-label" for="empleadoCheck">Es Empleado</label>
+        </div>
+
+        <!-- Radios -->
+        <div class="form-check mb-3">
+            <input type="radio" class="form-check-input" name="miradio" id="opcion1" />
+            <label class="form-check-label" for="opcion1">Opción 1</label>
+        </div>
+        <div class="form-check mb-3">
+            <input type="radio" class="form-check-input" name="miradio" id="opcion2" />
+            <label class="form-check-label" for="opcion2">Opción 2</label>
+        </div>
+
+        <!-- Form Floating -->
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" />
+            <label for="floatingInput">Digite su Nombre</label>
+        </div>
+
+        <!-- Color Picker -->
+        <div class="mb-3">
+            <label for="exampleColorInput" class="form-label">Color picker</label>
+            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Elija su color">
+        </div>
+
+        <!-- Botones -->
+        <div>
+            <button class="btn btn-outline-primary">Enviar</button>
+            <button class="btn btn-outline-secondary">Cancelar</button>
+        </div>
+    </form>
+
+    <!-- Formulario con columnas -->
+    <h2 class="fw-semibold mt-5 mb-3 text-success">🔹 Formulario con Columnas</h2>
+    <p>Podemos organizar los campos en columnas usando el sistema <code>.row</code> y <code>.col</code> de Bootstrap. Esto permite crear formularios más compactos y responsivos.</p>
+
+    <div class="row g-3">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Primer nombre" />
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Primer apellido" />
+        </div>
+        <div class="col">
+            <button class="btn btn-outline-primary w-100">Enviar</button>
+        </div>
+    </div>
+</div>

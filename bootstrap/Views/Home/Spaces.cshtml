@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Espacios";
+}
+
+<div class="container my-5">
+    <h1 class="fw-bold text-center mb-4 border-bottom pb-2">📖 Espaciado en Bootstrap (Margin y Padding)</h1>
+    <p class="lead text-center">
+        Bootstrap ofrece clases utilitarias para controlar <strong>márgenes (margin)</strong> y <strong>rellenos internos (padding)</strong>.
+        Estas clases permiten ajustar el espaciado de forma rápida y responsiva.
+    </p>
+
+    <!-- Ejemplo 1: Márgenes -->
+    <h2 class="fw-semibold mt-5 mb-3 text-primary">🔹 Ejemplo 1: Márgenes (Margin)</h2>
+    <div class="bg-light p-3 mb-2">
+        <div class="m-3 bg-primary text-white p-2">Margin en todos los lados (m-3)</div>
+        <div class="mt-5 bg-secondary text-white p-2">Margin arriba (mt-5)</div>
+        <div class="mx-auto bg-success text-white p-2 w-50">Margin horizontal automático (mx-auto)</div>
+    </div>
+
+    <!-- Ejemplo 2: Padding -->
+    <h2 class="fw-semibold mt-5 mb-3 text-success">🔹 Ejemplo 2: Padding</h2>
+    <div class="bg-light p-3 mb-2">
+        <div class="p-2 bg-info text-dark mb-2">Padding en todos los lados (p-2)</div>
+        <div class="ps-4 bg-warning text-dark mb-2">Padding start (izquierda en LTR) (ps-4)</div>
+        <div class="pe-4 bg-danger text-white mb-2">Padding end (derecha en LTR) (pe-4)</div>
+        <div class="py-5 bg-dark text-white">Padding vertical (py-5)</div>
+    </div>
+
+    <!-- Ejemplo 3: Márgenes específicos start/end -->
+    <h2 class="fw-semibold mt-5 mb-3 text-info">🔹 Ejemplo 3: Márgenes Start y End</h2>
+    <div class="bg-light p-3 mb-2">
+        <div class="ms-5 bg-primary text-white p-2">Margin start (ms-5)</div>
+        <div class="me-5 bg-secondary text-white p-2">Margin end (me-5)</div>
+    </div>
+
+    <!-- Ejemplo 4: Espaciado Responsivo -->
+    <h2 class="fw-semibold mt-5 mb-3 text-danger">🔹 Ejemplo 4: Espaciado Responsivo</h2>
+    <div class="bg-dark text-white p-2 p-md-5">
+        Este bloque tiene <code>p-2</code> en móviles (padding pequeño)
+        y <code>p-md-5</code> en pantallas medianas o superiores (padding grande).
+    </div>
+
+    <!-- Gap -->
+    <h2 class="fw-semibold mt-5 mb-3 text-info">🔹 Gap (Espaciado entre elementos)</h2>
+    <p>La clase <code>gap-*</code> controla el espacio entre elementos en un <code>.row</code> o un contenedor <code>d-flex</code>.</p>
+
+    <!-- Ejemplo con row -->
+    <div class="row gap-3 mb-3">
+        <div class="col bg-primary text-white p-3">Columna 1</div>
+        <div class="col bg-secondary text-white p-3">Columna 2</div>
+        <div class="col bg-success text-white p-3">Columna 3</div>
+    </div>
+
+    <!-- Ejemplo con flex -->
+    <div class="d-flex gap-4 bg-light p-3">
+        <div class="bg-info text-dark p-3">Elemento A</div>
+        <div class="bg-warning text-dark p-3">Elemento B</div>
+        <div class="bg-danger text-white p-3">Elemento C</div>
+    </div>
+
+    <!-- Tabla de referencia -->
+    <h2 class="fw-semibold mt-5 mb-3 text-secondary">🔹 Tabla de Referencia de Espaciado</h2>
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Clase</th>
+                <th>Descripción</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>m-0</td><td>Sin margen</td><td>0</td></tr>
+            <tr><td>m-1</td><td>Margen pequeño</td><td>0.25rem</td></tr>
+            <tr><td>m-2</td><td>Margen medio</td><td>0.5rem</td></tr>
+            <tr><td>m-3</td><td>Margen estándar</td><td>1rem</td></tr>
+            <tr><td>m-4</td><td>Margen grande</td><td>1.5rem</td></tr>
+            <tr><td>m-5</td><td>Margen extra grande</td><td>3rem</td></tr>
+            <tr><td>p-*</td><td>Padding (relleno interno)</td><td>Mismos valores que margin</td></tr>
+            <tr><td>ps-*</td><td>Padding start (izquierda en LTR)</td><td>0.25rem a 3rem</td></tr>
+            <tr><td>pe-*</td><td>Padding end (derecha en LTR)</td><td>0.25rem a 3rem</td></tr>
+            <tr><td>px-*</td><td>Padding eje x (derecha e izquierda)</td><td>0.25rem a 3rem</td></tr>
+            <tr><td>py-*</td><td>Padding eje y (arriba y abajo)</td><td>0.25rem a 3rem</td></tr>
+            <tr><td>ms-*</td><td>Margin start (izquierda en LTR)</td><td>0.25rem a 3rem</td></tr>
+            <tr><td>me-*</td><td>Margin end (derecha en LTR)</td><td>0.25rem a 3rem</td></tr>
+            <tr><td>mx-*</td><td>Margin eje x (derecha e izquierda)</td><td>0.25rem a 3rem</td></tr>
+            <tr><td>my-*</td><td>Margin eje y (arriba y abajo)</td><td>0.25rem a 3rem</td></tr>
+            <tr><td>gap-*</td><td>Espaciado entre elementos en row/flex</td><td>0 a 5</td></tr>
+            <tr><td>auto</td><td>Margen automático</td><td>Se ajusta al espacio disponible</td></tr>
+        </tbody>
+    </table>
+</div>

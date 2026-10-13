@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Menú Lateral";
+}
+
+<div class="container my-5">
+    <h1 class="fw-bold text-center mb-4 border-bottom pb-2">📖 Guía de Menú Lateral (Offcanvas) en Bootstrap</h1>
+    <p class="lead text-center">
+        El componente <strong>Offcanvas</strong> en Bootstrap permite mostrar un menú lateral o panel oculto que se despliega al hacer clic en un botón.
+        Es útil para menús de navegación, configuraciones o contenido adicional sin ocupar espacio permanente en la página.
+    </p>
+
+    <!-- Botón que abre el menú lateral -->
+    <h2 class="mb-3 text-primary fs-4 text-decoration-underline">🔹 Botón para abrir el menú</h2>
+    <p>El botón utiliza <code>data-bs-toggle="offcanvas"</code> y <code>data-bs-target="#staticBackdrop"</code> para abrir el menú lateral correspondiente.</p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+        Abrir menú lateral
+    </button>
+
+    <!-- Menú lateral (Offcanvas) -->
+    <h2 class="mt-5 mb-3 text-primary fs-4 text-decoration-underline">🔹 Estructura del Offcanvas</h2>
+    <p>
+        El menú lateral se compone de:
+        <ul>
+            <li><code>.offcanvas-header</code>: título y botón de cierre.</li>
+            <li><code>.offcanvas-body</code>: contenido principal, donde pueden ir menús, enlaces o formularios.</li>
+            <li><code>.dropdown</code>: ejemplo de menú desplegable dentro del offcanvas.</li>
+        </ul>
+    </p>
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Mi Aplicación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Este es el cuerpo del componente offcanvas, donde puede ir un menú de navegación o cualquier otro contenido.</p>
+        
+            <!-- Dropdown dentro del offcanvas -->
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Catálogo
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Empleados</a></li>
+                    <li><a class="dropdown-item" href="#">Productos</a></li>
+                    <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

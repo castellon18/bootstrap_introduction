@@ -1,0 +1,155 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container my-5">
+    <h1 class="text-primary fw-bold text-center mb-4 border-bottom pb-2">📐 Introducción al Sistema Grid</h1>
+
+    <p>
+        Bootstrap nos ofrece un sistema que permite organizar los elementos de la interfaz de usuario
+        en filas y columnas. A este se le conoce como <strong>sistema grid</strong>.
+    </p>
+
+    <p>
+        Cada fila se divide en <strong>12 columnas</strong>. El tamaño mínimo de una columna es 1 y el máximo es 12.
+    </p>
+
+    <!-- Ejemplo básico -->
+    <h2 class="text-secondary fw-semibold text-center mt-4 mb-3">🔹 Distribución Básica de Columnas</h2>
+    <div class="row mb-3">
+        <div class="col border">Columna 1</div>
+        <div class="col border">Columna 2</div>
+        <div class="col border">Columna 3</div>
+        <div class="col border">Columna 4</div>
+    </div>
+
+    <!-- Ejemplo con col-6 -->
+    <h2 class="text-info fw-semibold text-center mt-4 mb-3">🔹 Columnas con Tamaños Específicos</h2>
+    <div class="row mb-3">
+        <div class="col border">Columna 1</div>
+        <div class="col-6 border">Columna 2 (6/12)</div>
+        <div class="col border">Columna 3</div>
+    </div>
+
+    <!-- Máximo 12 columnas -->
+    <h2 class="text-dark fw-semibold text-center mt-4 mb-3">🔹 Máximo de 12 Columnas por Fila</h2>
+    <div class="row mb-3">
+        <!-- columnas aquí -->
+        <div class="col border">Columna 1</div>
+        <div class="col border">Columna 2</div>
+        <div class="col border">Columna 3</div>
+        <div class="col border">Columna 4</div>
+        <div class="col border">Columna 5</div>
+        <div class="col border">Columna 6</div>
+        <div class="col border">Columna 7</div>
+        <div class="col border">Columna 8</div>
+        <div class="col border">Columna 9</div>
+        <div class="col border">Columna 10</div>
+        <div class="col border">Columna 11</div>
+        <div class="col border">Columna 12</div>
+    </div>
+
+    <!-- Ejemplo vertical -->
+    <h2 class="text-secondary fw-semibold text-center mt-4 mb-3">📏 Columnas Verticales (Breakpoints)</h2>
+    <div class="row mb-3">
+        <!-- columnas aquí -->
+        <div class="col-sm-4 border">Columna 1</div>
+        <div class="col-sm-4 border">Columna 2</div>
+        <div class="col-sm-4 border">Columna 3</div>
+    </div>
+
+    <!-- Alineación vertical -->
+    <h2 class="text-info fw-semibold text-center mt-4 mb-3">⬆️ Alineación Vertical de Filas</h2>
+    <div class="row align-items-start mb-3">
+        <div class="col border">Arriba</div>
+        <div class="col border">Arriba</div>
+        <div class="col border">Arriba</div>
+    </div>
+    <div class="row align-items-center mb-3">
+        <div class="col border">Centro</div>
+        <div class="col border">Centro</div>
+        <div class="col border">Centro</div>
+    </div>
+    <div class="row align-items-end mb-3">
+        <div class="col border">Abajo</div>
+        <div class="col border">Abajo</div>
+        <div class="col border">Abajo</div>
+    </div>
+
+    <!-- Alineación horizontal -->
+    <h2 class="text-warning fw-semibold text-center mt-4 mb-3">➡️ Alineación Horizontal de Columnas</h2>
+    <div class="row mb-3">
+        <div class="col align-self-start border">Inicio</div>
+        <div class="col align-self-center border">Centro</div>
+        <div class="col align-self-end border">Final</div>
+    </div>
+
+    <!-- Offset -->
+    <h2 class="text-danger fw-semibold text-center mt-4 mb-3">⏩ Uso de Offset (Espacios)</h2>
+    <div class="row mb-3">
+        <div class="col-4 border">Columna 1</div>
+        <div class="col-4 offset-4 border">Columna 2</div>
+    </div>
+    <p>También se puede usar <code>.ms-auto</code> para margen automático:</p>
+    <div class="row mb-3">
+        <div class="col-3 border">Columna 1</div>
+        <div class="col-4 ms-auto border">Columna 2</div>
+    </div>
+
+    <!-- Gutter horizontal -->
+    <h2 class="text-dark fw-semibold text-center mt-4 mb-3">↔️ Espaciado Horizontal (Gutters)</h2>
+    <div class="row gx-5 gx-sm-0 gx-md-3 gx-lg-5 mb-3">
+        <div class="col border">Columna 1</div>
+        <div class="col border">Columna 2</div>
+    </div>
+
+    <!-- Gutter vertical -->
+    <h2 class="text-success fw-semibold text-center mt-4 mb-3">↕️ Espaciado Vertical (Gutters)</h2>
+    <div class="row gx-sm-0 gx-md-3 gx-lg-5 gy-4 mb-3">
+        <div class="col-6 border">Columna 1</div>
+        <div class="col-6 border">Columna 2</div>
+        <div class="col-6 border">Columna 3</div>
+        <div class="col-6 border">Columna 4</div>
+    </div>
+    <div class="row g-sm-0 g-md-3 g-lg-5">
+        <div class="col-6 border">Columna 1</div>
+        <div class="col-6 border">Columna 2</div>
+        <div class="col-6 border">Columna 3</div>
+        <div class="col-6 border">Columna 4</div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-primary fw-bold text-center mb-4 border-bottom pb-2">📱 Ejemplo Responsivo del Sistema Grid</h2>
+    <p>
+        Bootstrap permite definir columnas diferentes según el tamaño de pantalla.
+        Usamos <code>col-sm</code>, <code>col-md</code>, <code>col-lg</code> y <code>col-xl</code>
+        para ajustar el diseño automáticamente.
+    </p>
+
+    <!-- Ejemplo responsivo -->
+    <div class="row mb-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 border">Columna 1</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 border">Columna 2</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 border">Columna 3</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 border">Columna 4</div>
+    </div>
+
+    <p>
+        En pantallas <strong>pequeñas</strong> (móviles), cada columna ocupa todo el ancho.
+        En pantallas <strong>medianas</strong> (tablets), se muestran 3 columnas por fila.
+        En pantallas <strong>grandes</strong> (desktop), se muestran 4 columnas por fila.
+    </p>
+
+    <!-- Ejemplo combinado -->
+    <h3 class="text-secondary fw-semibold text-center mt-4 mb-3">🖥️ Ejemplo Combinado (Layout Mixto)</h3>
+    <div class="row mb-3">
+        <div class="col-sm-12 col-md-8 border">Columna grande (8/12)</div>
+        <div class="col-sm-12 col-md-4 border">Columna pequeña (4/12)</div>
+    </div>
+
+    <p>
+        Aquí vemos cómo una columna puede ocupar más espacio en pantallas medianas o grandes,
+        mientras que en móviles ambas se apilan verticalmente.
+    </p>
+</div>
